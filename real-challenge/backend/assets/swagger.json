@@ -1,0 +1,94 @@
+{
+    "info": {
+      "title": "Epsor Challenge API REST documentation",
+      "version": "1.0.0",
+      "license": {
+        "name": "ISC"
+      },
+      "description": "API REST pour gérer un inventaire produit"
+    },
+    "basePath": "/api/v1",
+    "host": "localhost:8080",
+    "tags": [
+        {
+            "name": "Products",
+            "description": "Méthodes permettant de gérer l'inventaire des produits"
+        }
+    ] ,
+    "paths": {
+      "products/{id}": {
+        "get": {
+          "tags": ["Products"],
+          "summary": "products/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ],
+          "responses": {}
+        },
+        "delete": {
+            "tags": ["Products"],
+          "summary": "products/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ],
+          "responses": {}
+        },
+        "put": {
+            "tags": ["Products"],
+          "summary": "products/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ],
+          "responses": {}
+        }
+      },
+      "products": {
+        "get": {
+            "tags": ["Products"],
+          "summary": "products",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [],
+          "responses": {}
+        },
+        "post": {
+            "tags": ["Products"],
+          "summary": "products",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "name",
+              "in": "body",
+              "required": true
+            }
+          ],
+          "responses": {}
+        }
+      }
+    },
+    "swagger": "2.0"
+  }
